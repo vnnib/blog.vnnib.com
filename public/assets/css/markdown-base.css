@@ -5,10 +5,15 @@ body {
 .vnnib-md-body {
     box-sizing: border-box;
     min-width: 200px;
-    max-width: 980px;
+    /* max-width: 980px; */
     margin: 0 auto;
     padding: 40px;
     border: 1px solid transparent;
+}
+@media (max-width: 768px) {
+    .vnnib-md-body {
+        padding: 20px 0;
+    }
 }
 
 .vnnib-md-body blockquote {
