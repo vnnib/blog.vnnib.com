@@ -1,9 +1,17 @@
 const mongoose = require('mongoose')
+const hljs = require('highlight.js')
 const marked = require('marked')
 const slugify = require('slugify')
 const createDomPurify = require('dompurify')
 const { JSDOM } = require('jsdom')
 const dompurify = createDomPurify(new JSDOM().window)
+
+marked.setOptions({
+  highlight: function(code, language) {
+    const valid = hljs.getLanguage(language) ? language : 'plaintext'
+    return hljs.highlight(valid, code).value
+  }
+})
 
 const articleSchema = new mongoose.Schema({
   title: {

@@ -1,0 +1,71 @@
+body {
+    background: white;
+}
+
+.vnnib-md-body {
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid transparent;
+}
+
+.vnnib-md-body blockquote {
+    background-color: initial;
+}
+
+.vnnib-md-body pre {
+    color: initial;
+    background: #f7f7f7 !important;
+}
+
+.vnnib-md-body code {
+    color: inherit;
+}
+
+.vnnib-md-body pre code {
+    color: initial;
+}
+
+.vnnib-md-body code > div {
+    background: none
+}
+
+.vnnib-md-body table th,
+.vnnib-md-body table td {
+    border: 1px solid #ddd !important;
+}
+
+.vnnib-md-body.showEditorSelection .code-active-line:before {
+    border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vnnib-md-body.showEditorSelection .code-line:hover:before {
+    border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vnnib-md-body.showEditorSelection .code-line .code-line:hover:before {
+    border-left: none;
+}
+
+.vnnib-md-body p,
+.vnnib-md-body blockquote,
+.vnnib-md-body ul,
+.vnnib-md-body ol,
+.vnnib-md-body dl,
+.vnnib-md-body table,
+.vnnib-md-body pre {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+body.vnnib-md-body::-webkit-scrollbar {
+    background-color: white;
+}
+body.vnnib-md-body::-webkit-scrollbar-thumb {
+    background-color: rgba(100, 100, 100, 0.4);
+}
+body.vnnib-md-body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(100, 100, 100, 0.7);
+}
